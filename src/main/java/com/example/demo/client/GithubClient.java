@@ -24,7 +24,7 @@ public class GithubClient {
             return Objects.requireNonNull(response.body()).string();
         } catch (Exception e) {
             log.error("Error retrieving commits from Github API", e);
-            throw new RuntimeException("Exception occured while fetching list of commits %s",e);
+            throw new RuntimeException("Exception occured while fetching the list of commits %s",e);
         }
 
     }
