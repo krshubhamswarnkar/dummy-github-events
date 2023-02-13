@@ -29,6 +29,7 @@ public class GithubWebhookEventHandler {
     // Mapping the webhook endpoint to handle POST requests
     @PostMapping("/webhook")
     public void handleWebhook(@RequestHeader(value="X-GitHub-Event") String eventType,@RequestBody String payload) {
+        
         // Reading the X-GitHub-Event header from the request
         log.info("receive eventype {}",eventType);
         // Switch statement to process different types of events
