@@ -1,0 +1,26 @@
+plugins {
+	id 'org.springframework.boot' version '2.4.0'
+	id 'java'
+}
+
+group = 'com.github.integration'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	annotationProcessor 'org.projectlombok:lombok:1.18.16'
+	implementation("org.springframework.boot:spring-boot-starter-logging:2.4.0")
+	implementation 'org.springframework.boot:spring-boot-starter-web:2.4.0'
+	implementation 'org.springframework.boot:spring-boot-starter-actuator:2.4.0'
+	implementation 'com.squareup.okhttp3:okhttp:4.7.2'
+	implementation 'com.google.code.gson:gson:2.8.6'
+	implementation 'org.projectlombok:lombok:1.18.16'
+	implementation 'org.apache.logging.log4j:log4j-core:2.13.3'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test:2.4.0'
+	testImplementation 'org.testng:testng:7.1.0'
+	testImplementation 'junit:junit:4.12'
+}
